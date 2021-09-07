@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
+/*
+  Component names must be capitalized!
+  They can take in an optional "props" object
+  They must return something (null, undefined, whatever, JSX)
+  No dashes, instead camel case (myNameIsCasey)
+  Use curly brackets to "interpolate" ie inject JS code into JSX
+*/
+
+function App(props) {
+  /* props.name, props.age */
+  console.log(props);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App"> {/* document.createElement('div') */}
+      <h1>Hello, world!</h1>
     </div>
   );
 }

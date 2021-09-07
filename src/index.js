@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+const myName = "Casey";
+const myAge = 72;
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App name={myName} age={myAge} />
+    {/*  const props =  { name: myName, age: myAge } */}
   </React.StrictMode>,
   document.getElementById('root')
 );
